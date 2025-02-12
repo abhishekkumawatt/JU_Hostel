@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div>
-      <header class="header-absolute sticky-header">
+      <header class="header-absolute sticky-header" style={{position:'fixed', zIndex:'1000', backgroundColor:'white'}}>
 		<div class="container container-custom-two">
 			<div class="nav-container d-flex align-items-center justify-content-between">
 				{/* <!-- Main Menu -->

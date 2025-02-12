@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import login from '../../../assets/img/hostel/login.png';
+import { Link } from 'react-router-dom';
+
 
 const OTP = () => {
+	useEffect(() => {
+				window.scrollTo(0, 0);
+			  });
   return (
     <div>
 		<Header/>
@@ -36,8 +41,8 @@ const OTP = () => {
 													</div>
 													
 													<div class="mb-20 text-center w-100">
-														<p class="text-center text-secondary">Didn’t receive OTP  <a hrer="#"
-															class="fw-bold text-danger mt-0 mt-md-4">Resend code</a></p>
+														<p class="text-center text-secondary">Didn’t receive OTP  <Link hrer="#"
+															class="fw-bold text-danger mt-0 mt-md-4">Resend code</Link></p>
 													</div>
 													<div class="input-group mt-4 input-group-two left-icon mb-20">
 

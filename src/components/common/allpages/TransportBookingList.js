@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom';
+
 
 const TransportBookingList = () => {
+	useEffect(() => {
+			window.scrollTo(0, 0);
+		  });
   return (
     <div>
 		<Header/>
@@ -54,10 +59,10 @@ const TransportBookingList = () => {
 													</div>
 													<div class="col-md-2 align-items-end d-flex">
 														<div class="input-group input-group-two left-icon mb-20">
-															<a href="/transport-booking-list" class="w-100">
+															<Link to="/transport-booking-list" class="w-100">
 																<button class="btn btn-danger js-btn-next text-white"
 																	type="button">Submit</button>
-															</a>
+															</Link>
 														</div>
 													</div>
 
@@ -114,8 +119,8 @@ const TransportBookingList = () => {
 												</div>
 												<div class="col-md-2 col-lg-2 my-auto">
 													<div class="bus_info ps-0 ps-md-4 ps-lg-4">
-														<a href="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
-															type="button">Book Now</button></a>
+														<Link to="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
+															type="button">Book Now</button></Link>
 													</div>
 												</div>
 											</div>
@@ -168,8 +173,8 @@ const TransportBookingList = () => {
 												</div>
 												<div class="col-md-2 col-lg-2 my-auto">
 													<div class="bus_info ps-0 ps-md-4 ps-lg-4">
-														<a href="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
-															type="button">Book Now</button></a>
+														<Link to="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
+															type="button">Book Now</button></Link>
 													</div>
 												</div>
 											</div>
@@ -222,8 +227,8 @@ const TransportBookingList = () => {
 												</div>
 												<div class="col-md-2 col-lg-2 my-auto">
 													<div class="bus_info ps-0 ps-md-4 ps-lg-4">
-														<a href="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
-															type="button">Book Now</button></a>
+														<Link to="/transport-payment"><button class="btn btn-danger w-100 js-btn-next text-white"
+															type="button">Book Now</button></Link>
 													</div>
 												</div>
 											</div>

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import booking from '../../../assets/img/hostel/booking.png';
+import { Link } from 'react-router-dom';
+
 
 const TransportBooking = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	  });
   return (
     <div>
         <Header/>
@@ -47,10 +52,10 @@ const TransportBooking = () => {
 												</div>
 												<div class="col-md-2 align-items-end d-flex">
 													<div class="input-group input-group-two left-icon mb-20">
-														<a href="/transport-booking-list" class="w-100">
+														<Link to="/transport-booking-list" class="w-100">
 														<button class="btn btn-danger js-btn-next text-white" type="button"
 												>Submit</button>
-												</a>
+												</Link>
 													</div>
 												</div>
 												

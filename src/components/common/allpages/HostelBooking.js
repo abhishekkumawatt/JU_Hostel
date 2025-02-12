@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import floor01 from '../../../assets/img/hostel/floor01.png';
+import { Link } from 'react-router-dom';
 
 const HostelBooking = () => {
+	useEffect(() => {
+			window.scrollTo(0, 0);
+		  });
   return (
     <div>
         <Header/>
@@ -53,34 +57,34 @@ const HostelBooking = () => {
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 1</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 2</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 3</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 4</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 									</div>
@@ -92,34 +96,34 @@ const HostelBooking = () => {
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 1</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 2</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 3</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-lg-3">
 											<div className="floorblog hover_floor">
-												<a href="/hostel-booking-room"><img src={floor01} className="img-fluid"
+												<Link to="/hostel-booking-room"><img src={floor01} className="img-fluid"
 														alt="" />
 													<span>Floor 4</span>
-												</a>
+												</Link>
 											</div>
 										</div>
 									</div>

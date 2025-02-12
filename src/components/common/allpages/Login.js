@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import login from '../../../assets/img/hostel/login.png';
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+
 
 const Login = () => {
+	useEffect(() => {
+				window.scrollTo(0, 0);
+			  });
   return (
     <div>
         <Header/>
@@ -27,7 +33,7 @@ const Login = () => {
 												<div class="formgrid">
 													<div class="input-group input-group-two left-icon mb-20">
 														<label>User Roles</label>
-														<select name="guest" id="guest" style={{display:'none'}}>
+														<Form.Select aria-label="Default select example" style={{width:'30rem', height: '3.1rem'}}>
 															<option value="" selected="">-- Select --
 															</option>
 															<option value="">Admin</option>
@@ -35,7 +41,7 @@ const Login = () => {
 															<option value="">Transport</option>
 															<option value="">Student</option>
 															<option value="">Parent</option>
-														</select>
+															</Form.Select>
 													</div>
 													<div class="input-group input-group-two left-icon mb-20">
 														<label class="w-100">Phone Number</label>
@@ -43,15 +49,15 @@ const Login = () => {
 													</div>
 													<div class="input-group mt-4 input-group-two left-icon mb-20">
 
-														<a href="/OTP" class="w-100"><button class="btn btn-danger w-100 text-white"
-															type="button">Send OTP</button></a>
+														<Link to="/OTP" class="w-100"><button class="btn btn-danger w-100 text-white"
+															type="button">Send OTP</button></Link>
 
 													</div>
 												</div>
 
 											</form>
-											<p class="text-center text-secondary">Don't have an account ? <a href="/register"
-													class="fw-bold text-danger mt-0 mt-md-4">Sign UP</a></p>
+											<p class="text-center text-secondary">Don't have an account ? <Link to="/register"
+													class="fw-bold text-danger mt-0 mt-md-4">Sign UP</Link></p>
 										</div>
 									</div>
 								</div>

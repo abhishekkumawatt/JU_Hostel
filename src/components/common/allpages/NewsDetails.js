@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import blog01img from '../../../assets/img/blog/01.jpg';
+import { Link } from 'react-router-dom';
 
 const NewsDetails = () => {
+	useEffect(() => {
+					window.scrollTo(0, 0);
+				  });
   return (
     <div>
         <Header/>
@@ -23,8 +27,8 @@ const NewsDetails = () => {
 						</div>
 						
 						<ul class="post-meta">
-						  <li><a href="#"><i class="fal fa-user"></i>by Piklo D. Sindom</a></li>
-						  <li><a href="#"><i class="fal fa-calendar-alt"></i>24th March 2019</a></li>
+						  <li><Link to="#"><i class="fal fa-user"></i>by Piklo D. Sindom</Link></li>
+						  <li><Link to="#"><i class="fal fa-calendar-alt"></i>24th March 2019</Link></li>
 						</ul>
 						
 						<p class="mb-30">

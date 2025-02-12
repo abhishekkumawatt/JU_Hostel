@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import login from '../../../assets/img/hostel/login.png';
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
 
 const Register = () => {
+	useEffect(() => {
+				window.scrollTo(0, 0);
+			  });
   return (
     <div>
         <Header/>
@@ -29,7 +34,7 @@ const Register = () => {
 														<div class="col-md-12">
 															<div class="input-group input-group-two left-icon mb-20">
 																<label>User Roles</label>
-																<select name="guest" id="guest" style={{display:"none"}}>
+																<Form.Select aria-label="Default select example" style={{width:'36rem', height: '3.1rem'}}>
 																	<option value="" selected="">-- Select --
 																	</option>
 																	<option value="">Admin</option>
@@ -37,7 +42,7 @@ const Register = () => {
 																	<option value="">Transport</option>
 																	<option value="">Student</option>
 																	<option value="">Parent</option>
-																</select>
+																	</Form.Select>
 															</div>
 														</div>
 														<div class="col-md-6">
@@ -50,12 +55,12 @@ const Register = () => {
 														<div class="col-md-6">
 															<div class="input-group input-group-two left-icon mb-20">
 																<label>Gender</label>
-																<select name="guest" id="guest" style={{display:"none"}}>
+																<Form.Select aria-label="Default select example" style={{width:'36rem', height: '3.1rem'}}>
 																	<option value="" selected="">-- Select --
 																	</option>
 																	<option value="">Male</option>
 																	<option value="">Female</option>
-																</select>
+																</Form.Select>
 															</div>
 														</div>
 														
@@ -96,10 +101,9 @@ const Register = () => {
 														</div>
 													</div>
 												</div>
-
 											</form>
-											<p class="text-center text-secondary">Already a Member? <a href="/login"
-													class="fw-bold text-danger mt-0 mt-md-4">Login Here</a></p>
+											<p class="text-center text-secondary">Already a Member? <Link to="/login"
+													class="fw-bold text-danger mt-0 mt-md-4">Login Here</Link></p>
 										</div>
 									</div>
 								</div>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import payment from '../../../assets/img/hostel/payment.png';
 
 const BookingRoomPayment = () => {
+	useEffect(() => {
+			window.scrollTo(0, 0);
+		  });
   return (
     <div>
 		<Header/>

@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import post01img from '../../../assets/img/latest-post/01.png'
 import post02img from '../../../assets/img/latest-post/02.png'
 import post03img from '../../../assets/img/latest-post/03.png'
 import clientlogo from '../../../assets/img/hostel/client-logo.png'
+import { Link } from 'react-router-dom';
+
 
 const NewsList = () => {
+	useEffect(() => {
+				window.scrollTo(0, 0);
+			  });
   return (
     <div>
 		<Header/>
@@ -32,11 +37,11 @@ const NewsList = () => {
 						<div class="post-desc">
 							<ul class="post-meta">
 								<li>
-									<a href="#"><i class="fal fa-calendar-alt"></i>18 Dec. 2024 11:56 am</a>
+									<Link to="#"><i class="fal fa-calendar-alt"></i>18 Dec. 2024 11:56 am</Link>
 								</li>
 
 							</ul>
-							<h4><a href="/news-details">6 Summer Programes for Indian students in international colleges</a></h4>
+							<h4><Link to="/news-details">6 Summer Programes for Indian students in international colleges</Link></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore.
@@ -52,13 +57,13 @@ const NewsList = () => {
 						<div class="post-desc">
 							<ul class="post-meta">
 								<li>
-									<a href="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</a>
+									<Link to="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</Link>
 								</li>
 								<li>
-									<a href="#"><i class="fal fa-user"></i>By Admin</a>
+									<Link to="#"><i class="fal fa-user"></i>By Admin</Link>
 								</li>
 							</ul>
-							<h4><a href="/news-details">Each of our 8 double rooms has its own distinct.</a></h4>
+							<h4><Link to="/news-details">Each of our 8 double rooms has its own distinct.</Link></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore.
@@ -74,13 +79,13 @@ const NewsList = () => {
 						<div class="post-desc">
 							<ul class="post-meta">
 								<li>
-									<a href="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</a>
+									<Link to="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</Link>
 								</li>
 								<li>
-									<a href="#"><i class="fal fa-user"></i>By Admin</a>
+									<Link to="#"><i class="fal fa-user"></i>By Admin</Link>
 								</li>
 							</ul>
-							<h4><a href="/news-details">Each of our 8 double rooms has its own distinct.</a></h4>
+							<h4><Link to="/news-details">Each of our 8 double rooms has its own distinct.</Link></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore.
@@ -96,13 +101,13 @@ const NewsList = () => {
 						<div class="post-desc">
 							<ul class="post-meta">
 								<li>
-									<a href="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</a>
+									<Link to="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</Link>
 								</li>
 								<li>
-									<a href="#"><i class="fal fa-user"></i>By Admin</a>
+									<Link to="#"><i class="fal fa-user"></i>By Admin</Link>
 								</li>
 							</ul>
-							<h4><a href="/news-details">Each of our 8 double rooms has its own distinct.</a></h4>
+							<h4><Link to="/news-details">Each of our 8 double rooms has its own distinct.</Link></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore.
@@ -118,13 +123,13 @@ const NewsList = () => {
 						<div class="post-desc">
 							<ul class="post-meta">
 								<li>
-									<a href="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</a>
+									<Link to="#"><i class="fal fa-calendar-alt"></i>23rd March 2019</Link>
 								</li>
 								<li>
-									<a href="#"><i class="fal fa-user"></i>By Admin</a>
+									<Link to="#"><i class="fal fa-user"></i>By Admin</Link>
 								</li>
 							</ul>
-							<h4><a href="/news-details">Each of our 8 double rooms has its own distinct.</a></h4>
+							<h4><Link to="/news-details">Each of our 8 double rooms has its own distinct.</Link></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore.

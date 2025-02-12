@@ -21,7 +21,7 @@ body {
     --bs-gray-500: #9493A6;
     --bs-heading: #06003E;
     --bs-gray-bg: #E7E7E6;
-    --bs-font: font-family: "Rubik", serif;
+    --bs-font: "Rubik", serif;
 }
 
 @media (max-width: 399px) {
@@ -47,8 +47,7 @@ a:focus,
 input:focus,
 textarea:focus,
 button:focus,
-.slick-initialized .slick-slide:focus,
-.btn:focus {
+.slick-initialized .slick-slide:focus {
     text-decoration: none;
     outline: none;
     -webkit-box-shadow: none;
@@ -7416,11 +7415,11 @@ header.sticky-header.sticky-active.header-two .header-info .item .title {
 }
 
 /*=======  FOOTER  =======*/
-footer {
+/* footer { */
     /*=======  Subscibe  =======*/
     /*=======  Widgets  =======*/
     /*=======  Copy Right  =======*/
-}
+/* } */
 
 footer .footer-subscibe-area {
     background-color: #fff;
@@ -8429,12 +8428,3 @@ nav.navbar.dropdown_menu.menu-items {
 .fw-semibold {
     font-weight: 500;
 }
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import hotelroom from '../../../assets/img/hostel/hotel-room.png';
+import { Link } from 'react-router-dom';
+
 
 const HostelBookingRoom = () => {
+	useEffect(() => {
+			window.scrollTo(0, 0);
+		  });
   return (
     <div>
         <Header/>
@@ -23,106 +28,106 @@ const HostelBookingRoom = () => {
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 										<span>Room No. 101</span>
-									</a>
+									</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 102</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 103</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor active_room">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor">
-										<a href="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={hotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>

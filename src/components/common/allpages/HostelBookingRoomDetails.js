@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import hostelfloor01 from '../../../assets/img/hostel/floor01.png';
+import { Link } from 'react-router-dom';
+
 
 const HostelBookingRoomDetails = () => {
+	useEffect(() => {
+			window.scrollTo(0, 0);
+		  });
   return (
     <div>
         <Header/>
@@ -62,9 +67,9 @@ const HostelBookingRoomDetails = () => {
 														<h4 class="text-danger fw-bold">Rs.50,000 </h4>
 													</div>
 													</div>
-													<a href="/booking-room-payment"
+													<Link to="/booking-room-payment"
 														class="btn btn-danger js-btn-next p-2 px-4 mt-2 text-white"
-														type="button">Book Now</a>
+														type="button">Book Now</Link>
 												</div>
 											</div>
 										</div>
