@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react'
-import Header from '../Header/Header'
+import React, {useEffect, useState} from 'react'
 import Footer from '../Footer/Footer'
 import floor01 from '../../../assets/img/hostel/floor01.png';
 import { Link } from 'react-router-dom';
@@ -10,7 +9,7 @@ const HostelBooking = () => {
 		  });
   return (
     <div>
-        <Header/>
+        
         <br/><br/><br/><br/>
       <div className="booking_section pb-115">
 		<div className="gi-register-wrapper container">
