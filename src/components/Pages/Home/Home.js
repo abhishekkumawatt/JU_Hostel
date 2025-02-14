@@ -32,6 +32,7 @@ import { Link } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import Slider from "react-slick";
+import AOS from "aos";
 
 const Home = () => {
   const[showHostel, setShowHostel]=useState("hostel")
@@ -57,12 +58,12 @@ const Home = () => {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6">
                 <div class="banner-content">
-                  <h1 class="title wow fadeInLeft" data-wow-delay=".5s">
+                  <h1 class="title wow fadeInLeft" data-aos="fade-right" data-aos-duration="500">
                     {" "}
                     Book your Hostel Anywhere, Anytime
                   </h1>
 
-                  <span class="promo-tag wow fadeInDown" data-wow-delay=".3s">
+                  <span class="promo-tag wow fadeInDown" data-aos="fade-down" data-aos-duration="300">
                     With Just your smart phone, you can book any hostel in
                     navrongo and pay with momo{" "}
                   </span>
@@ -70,7 +71,8 @@ const Home = () => {
                     <li>
                       <Link
                         class="main-btn btn-filled wow fadeInUp"
-                        data-wow-delay=".7s"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
                         to="/hostel-booking"
                       >
                         Get Started
@@ -81,10 +83,10 @@ const Home = () => {
               </div>
               <div
                 class="col-lg-6 col-md-6 wow fadeInRight"
-                data-wow-delay="0.5s"
+                data-aos-duration="500"
               >
                 <div className="banner-thumb d-none d-md-block">
-				<div class="hero-slider-one">
+				<div class="hero-slider-one" data-aos="fade-left">
                   <Slider {...settings}>
                     <div className="single-thumb">
                       <img
@@ -336,6 +338,7 @@ const Home = () => {
               <div
                 class="col-lg-4 col-md-6 wow fadeInRight"
                 data-wow-delay=".5s"
+                data-aos="fade-left"
               >
                 <div class="video-wrap">
                   <img src={hostel02img} alt="" />
@@ -343,7 +346,8 @@ const Home = () => {
               </div>
               <div
                 class="col-lg-8 col-md-6 wow fadeInLeft"
-                data-wow-delay=".3s"
+                data-aos-duration="1500"
+                data-aos="fade-right"
               >
                 <div class="block-text mb-small pl-20">
                   <div class="section-title mb-20">
@@ -410,6 +414,7 @@ const Home = () => {
               <div
                 class="col-lg-7 col-md-6 wow fadeInLeft"
                 data-wow-delay=".3s"
+                data-aos="fade-left"
               >
                 <div class="block-text mb-small pr-20">
                   <div class="section-title mb-20">
@@ -459,6 +464,7 @@ const Home = () => {
               <div
                 class="col-lg-5 col-md-6 wow fadeInRight"
                 data-wow-delay=".5s"
+                data-aos="fade-right"
               >
                 <div class="video-wrap">
                   <img src={hostel03img} alt="" />
@@ -475,6 +481,7 @@ const Home = () => {
               <div
                 class="col-lg-5 col-md-6 wow fadeInRight"
                 data-wow-delay=".5s"
+                data-aos="fade-right"
               >
                 <div class="video-wrap">
                   <img src={hostel04imgpng} alt="" />
@@ -483,6 +490,7 @@ const Home = () => {
               <div
                 class="col-lg-7 col-md-6 wow fadeInLeft"
                 data-wow-delay=".3s"
+                data-aos="fade-left"
               >
                 <div class="block-text mb-small pl-20">
                   <div class="section-title mb-20">
@@ -549,6 +557,7 @@ const Home = () => {
               <div
                 class="col-lg-12 col-md-12 text-center wow fadeInLeft"
                 data-wow-delay=".3s"
+                data-aos="fade-left"
               >
                 <div class="block-text mb-small pl-20">
                   <div class="section-title mb-20">
@@ -560,11 +569,13 @@ const Home = () => {
               <div
                 class="col-lg-12 col-md-12 text-center wow fadeInLeft"
                 data-wow-delay=".3s"
+                data-aos="fade-left"
               >
                 <div class="gallery-loop">
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".3s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery01img}>
@@ -575,6 +586,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".4s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery02img}>
@@ -585,6 +597,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".5s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery03img}>
@@ -595,6 +608,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".6s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery04img}>
@@ -605,6 +619,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".7s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery05img}>
@@ -615,6 +630,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".8s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery06img}>
@@ -625,6 +641,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay=".9s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery07img}>
@@ -635,6 +652,7 @@ const Home = () => {
                   <div
                     class="single-gallery-image wow fadeInUp"
                     data-wow-delay="1.1s"
+                    data-aos="fade-up"
                   >
                     <PhotoProvider>
                       <PhotoView src={gallery08img}>
