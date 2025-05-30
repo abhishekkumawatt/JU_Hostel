@@ -28,7 +28,7 @@ const OTP = () => {
 										<div class="multisteps-form__contents p-5">
 											<h2>Verification code</h2>
 											<h6>We have sent the verification code on your 
-												mobile number - <span class="text-danger">+91********78</span></h6>
+												mobile number - <span class="text-danger">+91********84</span></h6>
 											<form action="#" class="mt-5">
 												<div class="formgrid">
 													<div class="input-group input-group-two left-icon mb-20">

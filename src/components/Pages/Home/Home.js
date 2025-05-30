@@ -32,7 +32,6 @@ import { Link } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import Slider from "react-slick";
-import AOS from "aos";
 
 const Home = () => {
   const[showHostel, setShowHostel]=useState("hostel")
@@ -46,9 +45,9 @@ const Home = () => {
     pauseOnHover: true,
     // waitForAnimate: false,
   };
-  // useEffect(() => {
-  //       window.scrollTo(0, 0);
-  //       });
+  useEffect(() => {
+        window.scrollTo(0, 0);
+        });
   return (
     <div>
       <Header />
@@ -58,12 +57,12 @@ const Home = () => {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6">
                 <div class="banner-content">
-                  <h1 class="title wow fadeInLeft" data-aos="fade-right" data-aos-duration="500">
+                  <h1 class="title" data-aos="fade-right" data-aos-duration=".5s">
                     {" "}
                     Book your Hostel Anywhere, Anytime
                   </h1>
 
-                  <span class="promo-tag wow fadeInDown" data-aos="fade-down" data-aos-duration="300">
+                  <span class="promo-tag wow fadeInDown" data-aos="fade-down" data-aos-duration=".3s">
                     With Just your smart phone, you can book any hostel in
                     navrongo and pay with momo{" "}
                   </span>
@@ -72,7 +71,7 @@ const Home = () => {
                       <Link
                         class="main-btn btn-filled wow fadeInUp"
                         data-aos="fade-up"
-                        data-aos-duration="700"
+                        data-aos-duration=".7s"
                         to="/hostel-booking"
                       >
                         Get Started
@@ -83,7 +82,7 @@ const Home = () => {
               </div>
               <div
                 class="col-lg-6 col-md-6 wow fadeInRight"
-                data-aos-duration="500"
+                data-aos-duration=".5s"
               >
                 <div className="banner-thumb d-none d-md-block">
 				<div class="hero-slider-one" data-aos="fade-left">

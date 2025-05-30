@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import hotelroom from '../../../assets/img/hostel/hotel-room.png';
+import activehotelroom from '../../../assets/img/hostel/active-room.png'
 import { Link } from 'react-router-dom';
 
 
@@ -108,7 +109,7 @@ const HostelBookingRoom = () => {
 								</div>
 								<div class="col-md-3 col-lg-2">
 									<div class="floorblog hostelrooms hover_floor active_room">
-										<Link to="/hostel-booking-room-details"><img src={hotelroom}
+										<Link to="/hostel-booking-room-details"><img src={activehotelroom}
 											class="img-fluid" alt="" />
 											<span>Room No. 104</span>
 										</Link>

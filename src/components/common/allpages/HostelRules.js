@@ -9,8 +9,7 @@ const HostelRules = () => {
       <section class="contact-part pt-115 pb-115">
 		<div class="container">
 			{/* <!-- Contact Info --> */}
-			<div class="contact-info">
-							
+			<div class="contact-info">	
 							<div class="row">
 								<div class="col-md-12">
 									<div class="section-title">
